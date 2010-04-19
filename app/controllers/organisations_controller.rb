@@ -40,7 +40,7 @@ class OrganisationsController < ApplicationController
   # POST /organisations
   # POST /organisations.xml
   def create
-    @organisation = Organisation.new(params[:test])
+    @organisation = Organisation.new(params[:organisation])
 
     respond_to do |format|
       if @organisation.save
