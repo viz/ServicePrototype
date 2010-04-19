@@ -1,15 +1,15 @@
-class CreateMembers < ActiveRecord::Migration
+class CreatePeople < ActiveRecord::Migration
   def self.up
-    create_table :members do |t|
+    create_table :people do |t|
+      t.string :fullname
       t.string :firstname
       t.string :lastname
-      t.string :email
 
       t.timestamps
     end
   end
 
   def self.down
-    drop_table :members
+    drop_table :people
   end
 end
