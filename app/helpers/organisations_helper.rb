@@ -1,2 +1,2 @@
-module OrganisationHelper
+module OrganisationsHelper
 end
