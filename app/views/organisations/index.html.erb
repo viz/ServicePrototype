@@ -6,6 +6,7 @@
 
 <% @organisations.each do |organisation| %>
   <tr>
+    <td><%=h organisation.name %></td>
     <td><%= link_to 'Show', organisation %></td>
     <td><%= link_to 'Edit', edit_organisation_path(organisation) %></td>
     <td><%= link_to 'Destroy', organisation, :confirm => 'Are you sure?', :method => :delete %></td>
